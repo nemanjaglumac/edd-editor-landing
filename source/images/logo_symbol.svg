@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="30px" viewBox="0 0 32 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>logo_symbol</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="37.3528517%" y1="93.6485714%" x2="55.5011407%" y2="30.8564286%" id="linearGradient-1">
+            <stop stop-color="#FD9A84" offset="0%"></stop>
+            <stop stop-color="#FFD78C" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="49.9457516%" y1="89.4826972%" x2="49.9457516%" y2="18.1391858%" id="linearGradient-2">
+            <stop stop-color="#B3E496" offset="0%"></stop>
+            <stop stop-color="#FFB264" offset="48.43%"></stop>
+            <stop stop-color="#F26CB0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="94.9372315%" y1="74.8692308%" x2="6.5451074%" y2="23.257265%" id="linearGradient-3">
+            <stop stop-color="#EB60A6" offset="0%"></stop>
+            <stop stop-color="#C181CF" offset="48.43%"></stop>
+            <stop stop-color="#9CA6DB" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Edd-landing-page" transform="translate(-784.000000, -4272.000000)" fill-rule="nonzero">
+            <g transform="translate(-256.000000, -2.000000)" id="Footer">
+                <g transform="translate(0.000000, 4219.000000)">
+                    <g id="logo_symbol" transform="translate(1039.336763, 55.000000)">
+                        <g id="Layer_1" transform="translate(16.500000, 15.000000) scale(-1, 1) translate(-16.500000, -15.000000) ">
+                            <polygon id="Shape" fill="url(#linearGradient-1)" opacity="0.75" points="0.675 21.375 20.4 21.375 20.4 0.375 0.675 0.375"></polygon>
+                            <polygon id="Shape" fill="url(#linearGradient-2)" opacity="0.8" points="0.675 21.375 12.15 29.85 12.15 8.85 0.675 0.375"></polygon>
+                            <polygon id="Shape" fill="url(#linearGradient-3)" opacity="0.8" points="12.15 8.85 0.675 0.375 20.4 0.375 32.1 9.15"></polygon>
+                            <polygon id="Shape" fill="#EF9D54" opacity="0.3" points="12.15 21.375 12.15 8.85 20.4 9 20.25 10.275 13.5 10.275 13.5 21.375"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
