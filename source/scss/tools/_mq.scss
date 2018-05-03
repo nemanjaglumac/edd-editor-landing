@@ -23,6 +23,6 @@ ORDER: Base + typography > general layout + grid > page layout > components
         @media only screen and (min-width: 48em) { @content };     //768px
     }
     @if $breakpoint == large {
-        @media only screen and (max-width: 92em) { @content };    //992px
+        @media only screen and (min-width: 62em) { @content };    //992px
     }
 }
