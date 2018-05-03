@@ -1,0 +1,47 @@
+.c-clients {
+
+}
+
+  .c-clients__title {
+    font-size: rem-calc(16);
+    color: $primary-color-light;
+    margin-bottom: rem-calc(30);
+    margin-top: rem-calc(30);
+    text-align: center;
+
+    @include mq(medium) {
+      margin-top: rem-calc(75);
+    };
+
+    @include mq(large) {
+      margin-top: rem-calc(150);
+    };
+  }
+
+  .c-clients__container {
+    max-width: rem-calc(1100);
+    margin: 0 auto;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include mq(medium) {
+      flex-direction: row;
+      justify-content: space-between;
+    };
+  }
+
+    .c-clients__img {
+      display: block;
+      max-width: rem-calc(185);
+
+      &:not(:last-of-type) {
+        margin-bottom: rem-calc(80);
+
+        @include mq(medium) {
+          margin-bottom: 0;
+        };
+      }
+    }
