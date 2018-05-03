@@ -21,19 +21,32 @@
     margin-top: -80px;
     z-index: 10;
 
+    .c-features__title {
+      font-size: rem-calc(20);
+    }
+
+    .c-features__description {
+      font-size: rem-calc(18);
+    }
+
     @include mq(medium) {
       margin-top: -350px;
       margin-bottom: 80px;
       width: 100%;
+
+      .c-features__image {
+        margin-bottom: rem-calc(40);
+      }
     };
 
     @include mq(large) {
+      margin-top: -250px;
       width: rem-calc(892);
     };
   }
 
     .c-features__title {
-      font-weight: rem-calc(24);
+      font-size: rem-calc(24);
       font-weight: 400;
       color: $dark-grey;
       margin-bottom: rem-calc(20);
