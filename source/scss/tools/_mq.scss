@@ -1,0 +1,28 @@
+// MEDIA QUERY MANAGER
+/*
+0 - 480px:      Normal style
+480px- 767px:   Phone landscape - small
+768 - 991px:    Tablet - medium
+992+:           Desktop - large
+
+
+$breakpoint arguement choices:
+- small
+- medium
+- large
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
+@mixin mq($breakpoint) {
+    @if $breakpoint == small {
+        @media only screen and (min-width: 30em) { @content };    //480px
+    }
+    @if $breakpoint == medium {
+        @media only screen and (min-width: 48em) { @content };     //768px
+    }
+    @if $breakpoint == large {
+        @media only screen and (max-width: 92em) { @content };    //992px
+    }
+}
