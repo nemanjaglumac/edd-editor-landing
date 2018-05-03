@@ -1,0 +1,13 @@
+.c-webflow {
+  position: fixed;
+  border: 1px solid $primary-color-light;
+  padding: 6px 8px 6px 6px;
+  border-radius: $global-radius;
+  z-index: 100;
+  bottom: rem-calc(12);
+  right: rem-calc(12);
+}
+
+  .c-webflow__img {
+    margin-right: rem-calc(5);
+  }
