@@ -1,10 +1,18 @@
 body {
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: $global-font-size;
-  line-height: $global-line-height;
+  font-size: rem-calc(14);
+  line-height: 20px;
+  font-weight: 300;
   color: $primary-color;
+  -webkit-font-smoothing: antialiased;
+  font-kerning: normal;
 }
 
 h1 {
   color: $primary-color-dark;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-weight: 300;
+  line-height: $global-line-height;
 }
