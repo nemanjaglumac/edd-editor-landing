@@ -1,0 +1,31 @@
+.c-footer {
+  height: rem-calc(300);
+
+  @include mq(medium) {
+    height: rem-calc(110);
+  };
+}
+
+  .c-footer__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    height: 100%;
+
+    @include mq(medium) {
+      flex-direction: row;
+      align-items: center;
+      max-width: rem-calc(1000);
+      margin: 0 auto;
+    };
+  }
+
+  .c-footer__item {
+    text-align: center;
+  }
+
+  .c-footer__link {
+    color: $primary-color-light;
+    font-weight: 300;
+  }
