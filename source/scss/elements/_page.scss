@@ -20,3 +20,10 @@ html {
   overflow-y: scroll; /* [2] */
   min-height: 100%; /* [3] */
 }
+
+body {
+  background-color: white;
+  margin: 0;
+  min-height: 100%;
+  min-width: rem-calc(375);
+}
