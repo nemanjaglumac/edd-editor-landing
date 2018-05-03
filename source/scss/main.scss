@@ -1,14 +1,10 @@
 // SETTINGS
 @import "settings/settings";
-// @import "settings/settings.core";
-// @import "settings/settings.global";
-// @import "settings/settings.colors";
+
 
 // TOOLS
-// @import "tools/tools.font-size";
-// @import "tools/tools.clearfix";
-// @import "node_modules/sass-mq/mq";
-// @import "tools/tools.aliases";
+@import "tools/mq";
+@import "tools/rem-calc";
 
 // GENERIC
 @import "generic/box-sizing";
