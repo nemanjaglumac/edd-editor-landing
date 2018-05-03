@@ -12,10 +12,14 @@
 $global-radius: 4px !default;
 $global-transition: all 300ms ease-in-out !default;
 
+$global-spacing-unit: rem-calc(40);
+
 $global-font-size: 14px;
 $global-line-height: 20px;
 
 
+
+// COLORS
 $primary-color: #7a8f9d;
 $primary-color-dark: #3c4a54;
 $primary-color-light: #96abba;
