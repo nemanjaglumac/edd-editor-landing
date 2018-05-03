@@ -1,0 +1,57 @@
+.c-header {
+  height: rem-calc(500);
+  position: relative;
+  background-image: url('../images/shapes.png'), linear-gradient(45deg, #e5e8f5, #f0eff9 50%, #fffdff);
+  background-position: center bottom, 0px 0px;
+  background-size: contain, auto;
+  background-repeat: no-repeat;
+  text-align: center;
+
+  @include mq(medium) {
+    background-position: center center, 0px 0px;
+    background-size: cover, auto;
+    height: rem-calc(800);
+  };
+
+  @include mq(large) {
+    height: rem-calc(700);
+  };
+}
+
+  .c-header__topbar {
+    height: rem-calc(70);
+    display: flex;
+    justify-content: space-between;
+    padding:rem-calc(5) rem-calc(30);
+  }
+
+    .c-header__logo {
+      padding: rem-calc(15);
+      max-width: rem-calc(82);
+    }
+
+  .c-header__content {
+    margin-top: rem-calc(60);
+    margin-bottom: rem-calc(100);
+
+    @include mq(medium) {
+      margin-bottom: rem-calc(120);
+    };
+
+    @include mq(large) {
+      margin-bottom: rem-calc(80);
+    };
+  }
+
+    .c-header__title {
+
+    }
+
+    .c-header__tagline {
+      margin-bottom: rem-calc(30);
+    }
+
+  .c-header__scroll {
+    display: block;
+
+  }

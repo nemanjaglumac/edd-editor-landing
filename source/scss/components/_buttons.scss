@@ -1,0 +1,19 @@
+.c-button {
+  padding: rem-calc(5) rem-calc(15);
+  border-radius: 4px;
+  background-color: $primary-color-dark;
+  box-shadow: 0 16px 32px 0 rgba(60, 74, 84, .3);
+  transition: all 400ms ease;
+  color: #fff;
+  font-size: rem-calc(12);
+  font-weight: 400;
+  text-decoration: none;
+}
+
+  .c-button__icon {
+    padding: rem-calc(5);
+  }
+
+  .c-button__text {
+    padding: rem-calc(3) rem-calc(10);
+  }

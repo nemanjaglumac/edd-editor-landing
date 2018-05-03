@@ -3,7 +3,41 @@
 
 {% block base -%}
 
-<header>
+<header class="c-header">
+  <div class="c-header__topbar">
+    <img class="c-header__logo" src="images/logo.svg" alt="">
+    <input class="c-navigation__checkbox"type="checkbox" name="nav-toggle" id="nav-toggle" data-toggle="toggle">
+    <label class="c-navigation__toggle" for="nav-toggle">
+      <i class="material-icons">menu</i>
+    </label>
+    <ul class="c-navigation">
+      <li class="c-navigation__item">
+        <a href="#">Features</a>
+      </li>
+      <li class="c-navigation__item">
+        <a href="#">Documentation</a>
+      </li>
+      <li class="c-navigation__item">
+        <a href="#">Plugins</a>
+      </li>
+      <li class="c-navigation__item">
+        <a href="#">Support</a>
+      </li>
+    </ul>
+  </div>
+  <div class="c-header__content">
+    <h1 class="c-header__title">Meet Edd.</h1>
+    <h3 class="c-header__tagline">Fast, minimal and super powerful code editor.</h3>
+    <button class="c-button" type="submit" name="button">
+      <img class="c-button__icon" src="images/download_btn_icon.svg" alt="">
+      <a class="c-button__text" href="#">
+        Download for Mac
+      </a>
+    </button>
+  </div>
+  <a class="c-header__scroll" href="#">
+    <img src="images/scroll_icon.svg" alt="">
+  </a>
 
 </header>
 <div class="">
