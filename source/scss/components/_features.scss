@@ -16,8 +16,20 @@
     };
   }
 
-  .c-features__item--dark {
+  .c-features__item--main {
 
+    margin-top: -80px;
+    z-index: 10;
+
+    @include mq(medium) {
+      margin-top: -350px;
+      margin-bottom: 80px;
+      width: 100%;
+    };
+
+    @include mq(large) {
+      width: rem-calc(892);
+    };
   }
 
     .c-features__title {
@@ -54,4 +66,12 @@
       padding-left: rem-calc(60);
       padding-right: rem-calc(60);
     };
+  }
+
+  .u-underline {
+    text-decoration: underline;
+  }
+
+  .u-full-width {
+    width: 100% !important;
   }

@@ -9,7 +9,7 @@
 
   @include mq(medium) {
     background-position: center center, 0px 0px;
-    background-size: cover, auto;
+    background-size: 100%, auto;
     height: rem-calc(800);
   };
 
