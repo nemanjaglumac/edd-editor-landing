@@ -1,0 +1,52 @@
+.c-features {
+
+}
+
+  .c-features__item {
+    margin-bottom: rem-calc(60);
+    max-width: rem-calc(500);
+
+    @include mq(medium) {
+      width: 50%;
+    };
+
+    @include mq(large) {
+      margin-right: rem-calc(80);
+      margin-left: rem-calc(80);
+    };
+  }
+
+  .c-features__item--dark {
+
+  }
+
+    .c-features__title {
+      font-weight: rem-calc(24);
+      font-weight: 400;
+      color: $dark-grey;
+      margin-bottom: rem-calc(20);
+
+      &--white {
+        color: white;
+      }
+    }
+
+    .c-features__description {
+      padding-bottom: rem-calc(40);
+      font-size: rem-calc(15);
+      line-height: 2;
+    }
+
+  .c-features__image {
+    box-shadow: 0 16px 32px 0 rgba(122, 143, 157, .3);
+  }
+
+  .c-features__featured-section {
+    background-image: url('../images/shapes_2.jpg');
+    background-position: 0 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+  }
