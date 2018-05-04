@@ -1,8 +1,10 @@
 .c-footer {
   height: rem-calc(300);
+  padding-bottom: rem-calc(10);
 
   @include mq(medium) {
     height: rem-calc(110);
+    padding-bottom: rem-calc(20);
   };
 }
 
