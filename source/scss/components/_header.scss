@@ -51,14 +51,31 @@
   }
 
     .c-header__title {
-
+      @include mq(large) {
+        font-size: rem-calc(32);
+      };
     }
 
     .c-header__tagline {
       margin-bottom: rem-calc(30);
+
+      @include mq(large) {
+        font-size: rem-calc(18);
+      };
     }
 
   .c-header__scroll {
     display: block;
 
+    @include mq(small) {
+      margin-top: -3rem;
+    };
+
+    @include mq(medium) {
+      margin-top: -1rem;
+    };
+
+    // @include mq(large) {
+    //   margin-top: -0.5rem;
+    // };
   }
