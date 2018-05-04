@@ -1,13 +1,18 @@
 .c-header {
   height: rem-calc(500);
   position: relative;
-  background-image: url('../images/shapes.png'), linear-gradient(45deg, #e5e8f5, #f0eff9 50%, #fffdff);
+  background-image: url('../images/shapes.png'), linear-gradient(95deg, #e5e8f5, #f0eff9 50%, #fffdff);
   background-position: center bottom, 0px 0px;
   background-size: contain, auto;
   background-repeat: no-repeat;
   text-align: center;
 
+  @include mq(small) {
+    background-image: url('../images/shapes.png'), linear-gradient(85deg, #e5e8f5, #f0eff9 45%, #fffdff);
+  };
+
   @include mq(medium) {
+    background-image: url('../images/shapes.png'), linear-gradient(85deg, #e5e8f5, #f0eff9 40%, #fffdff);
     background-position: center center, 0px 0px;
     background-size: 100%, auto;
     height: rem-calc(800);
@@ -15,6 +20,7 @@
 
   @include mq(large) {
     height: rem-calc(700);
+    background-image: url('../images/shapes.png'), linear-gradient(74deg, #e5e8f5, #f0eff9 50%, #fffdff);
   };
 }
 
@@ -39,7 +45,8 @@
     };
 
     @include mq(large) {
-      margin-bottom: rem-calc(80);
+      margin-top: rem-calc(80);
+      margin-bottom: rem-calc(60);
     };
   }
 
