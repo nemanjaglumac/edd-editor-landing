@@ -66,6 +66,7 @@
 
   .c-header__scroll {
     display: block;
+    animation: bounce 1000ms ease-in-out infinite;
 
     @include mq(small) {
       margin-top: -3rem;
