@@ -1,8 +1,8 @@
-.c-navigation {
+.c-navigation__list {
   visibility: hidden;
   opacity: 0;
-  display: none;
-  transform: translateY(-500px);
+  transform-origin: 50% 0;
+  transform: scaleY(0);
   position: absolute;
   top: 70px;
   left: 0;
@@ -11,7 +11,7 @@
     opacity: 1;
     visibility: visible;
     display: flex;
-    transform: translateY(0);
+    transform: scaleY(1);
     left: auto;
     right: 0;
     top: 25px;
@@ -23,8 +23,9 @@
     height: rem-calc(60);
     display: flex;
     align-items: center;
-    padding-left: rem-calc(30);
+    padding-left: rem-calc(60);
     color: white;
+    font-weight: 400;
 
     @include mq(medium) {
       height: 100%;
@@ -64,13 +65,12 @@
     padding: rem-calc(18);
   }
 
-  &:checked ~ .c-navigation {
-    display: block;
+  &:checked ~ .c-navigation__list {
     background: $primary-color-dark;
     width: 100%;
     visibility: visible;
     opacity: 1;
-    transform: translateY(0);
+    transform: scaleY(1);
     transition: all 400ms;
   }
 }
