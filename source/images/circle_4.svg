@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="56px" height="56px" viewBox="0 0 56 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Circle</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.4">
+        <g id="Edd-landing-page" transform="translate(-553.000000, -1836.000000)" fill="#FFDE8A">
+            <g transform="translate(-256.000000, -2.000000)" id="Features">
+                <g transform="translate(131.000000, 1228.000000)">
+                    <g id="Circles" transform="translate(199.000000, 0.000000)">
+                        <circle id="Circle" cx="507" cy="638" r="28"></circle>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
