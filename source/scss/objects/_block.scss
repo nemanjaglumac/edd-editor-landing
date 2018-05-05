@@ -13,8 +13,11 @@
 }
 
   .o-block__img {
-    margin-bottom: rem-calc(25);
-  }
+    margin-bottom: rem-calc(30);
+
+    @include mq(large) {
+      margin-bottom: rem-calc(45);
+    }
 
   //   /* Size variants
   //      ====================================================================== */
@@ -35,18 +38,22 @@
   //     margin-bottom: $inuit-global-spacing-unit-large;
   //   }
   //
-  //   .o-block--huge > & {
-  //     margin-bottom: $inuit-global-spacing-unit-huge;
-  //   }
-  //
-  // }
+    .o-block--huge > & {
+      margin-bottom: rem-calc(140);
+
+      @include mq(large) {
+        margin-bottom: rem-calc(110);
+      }
+    }
+
+  }
 
   .o-block__body {
     display: block;
     text-align: center;
+    padding-left: rem-calc(35);
+    padding-right: rem-calc(35);
   }
-
-
 
 
 
@@ -61,16 +68,19 @@
   text-align: left;
 }
 
-/* Color variants
+/* Color variants / PROJECT SPECIFIC
    ========================================================================== */
 
 .o-block--dark {
   background: $dark-grey;
-
   border-radius: rem-calc(10);
 
-  // > .o-block__body {
-  //   border-bottom-left-radius: rem-calc(10);
-  //   border-bottom-right-radius: rem-calc(10);
-  // }
+  > .o-block__img {
+    margin-bottom: rem-calc(30);
+  }
+
+  > .o-block__body {
+    padding-bottom: rem-calc(40);
+
+  }
 }

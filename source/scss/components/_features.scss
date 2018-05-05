@@ -1,55 +1,73 @@
 .c-features {
-
+  @include mq(large) {
+    padding: 0 15%;
+  };
 }
 
   .c-features__item {
-    margin-bottom: rem-calc(60);
-    max-width: rem-calc(500);
+    max-width: rem-calc(350);
+    margin-bottom: rem-calc(70);
 
     @include mq(medium) {
       width: 50%;
+      margin-bottom: rem-calc(20);
     };
 
     @include mq(large) {
-      margin-right: rem-calc(60);
-      margin-left: rem-calc(60);
+      margin-bottom: 0;
+      // margin-right: rem-calc(60);
+      // margin-left: rem-calc(60);
     };
   }
 
   .c-features__item--main {
-
+    max-width: rem-calc(892);
     margin-top: -80px;
+    margin-bottom: rem-calc(140);
     z-index: 10;
-
-    .c-features__title {
-      font-size: rem-calc(20);
-    }
-
-    .c-features__description {
-      font-size: rem-calc(18);
-    }
 
     @include mq(medium) {
       margin-top: -350px;
-      margin-bottom: 80px;
-      width: 100%;
-
-      .c-features__image {
-        margin-bottom: rem-calc(40);
-      }
+      width: 95%;
     };
 
     @include mq(large) {
       margin-top: -250px;
       width: rem-calc(892);
     };
+
+    .c-features__title {
+      font-size: rem-calc(18);
+
+      @include mq(medium) {
+        font-size: rem-calc(20)
+      };
+    }
+
+    .c-features__description {
+      font-size: rem-calc(16);
+      line-height: 1.5;
+
+      @include mq(medium) {
+        font-size: rem-calc(18)
+      };
+    }
+  }
+
+  .c-features__item--dark {
+    max-width: rem-calc(500);
+    margin-bottom: rem-calc(55);
+
+    @include mq(large) {
+      margin-bottom: rem-calc(100);
+    }
   }
 
     .c-features__title {
       font-size: rem-calc(24);
       font-weight: 400;
       color: $dark-grey;
-      margin-bottom: rem-calc(20);
+      margin-bottom: rem-calc(15);
 
       &--white {
         color: white;
@@ -57,13 +75,17 @@
     }
 
     .c-features__description {
-      padding-bottom: rem-calc(40);
+      color: $primary-color-light;
       font-size: rem-calc(15);
       line-height: 2;
     }
 
   .c-features__image {
     box-shadow: 0 16px 32px 0 rgba(122, 143, 157, .3);
+
+    .c-features__item--dark & {
+      box-shadow: none;
+    }
   }
 
   .c-features__featured-section {
@@ -76,7 +98,6 @@
     flex-direction: column;
 
     @include mq(large) {
-      padding-left: rem-calc(60);
-      padding-right: rem-calc(60);
+      padding: 0 12%;
     };
   }
