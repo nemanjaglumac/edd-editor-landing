@@ -21,6 +21,15 @@
           $('.c-navigation__toggle').click();
         }
       });
+      var $root = $('html, body');
+
+      $('[href^="#"]').click(function () {
+          $root.animate({
+              scrollTop: $( $.attr(this, 'href') ).offset().top
+          }, 1000);
+
+          return false;
+      });
       </script>
 </body>
 </html>
