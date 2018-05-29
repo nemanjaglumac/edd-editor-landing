@@ -7,6 +7,7 @@ import browserSync from 'browser-sync';
 import gulpLoadPlugins from 'gulp-load-plugins';
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
+var ghPages = require('gulp-gh-pages');
 
 
 var data = require('gulp-data');
@@ -74,4 +75,9 @@ gulp.task('default', ['styles', 'html', 'images'], () => {
   gulp.watch(['source/templates/**/*.+(html|njk)'], ['html', reload]);
   gulp.watch(['source/scss/**/*.{scss,css}'], ['styles', reload]);
   gulp.watch(['source/images/**/*'], reload);
+});
+
+gulp.task('deploy', function() {
+  return gulp.src('./dist/**/*')
+    .pipe(ghPages());
 });
