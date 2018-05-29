@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Boilerplate Starter Project Homepage</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <link rel="stylesheet" href="styles/main.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body class="u-positioned">
+
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script>
+      $( document ).ready( () => {
+        $('.c-header__title, .c-header__tagline, .c-header__download').addClass('js-move-up');
+      });
+      $('.c-navigation__list').click( () => {
+        if ($(window).width() < 768) {
+          $('.c-navigation__toggle').click();
+        }
+      });
+      </script>
+</body>
+</html>
